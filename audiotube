@@ -5,5 +5,5 @@ for i in $* ; do
   if [ $? -ne 0 ] ; then
     url="http://www.youtube.com/watch?v=${url}"
   fi
-  youtube-dl --title --audio-format=mp3 --extract-audio "${url}"
+  youtube-dl --restrict-filenames --audio-format=mp3 --extract-audio "${url}"
 done
