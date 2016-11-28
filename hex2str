@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+xxd -r -p $1 | iconv -f iso8859-7 ; echo
