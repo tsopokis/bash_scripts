@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+basename=$(basename "$1" .pdf)
+pdf2ps -sDEVICE=psgray "${basename}.pdf"
+ps2pdf "${basename}.ps" "${basename}-bw.pdf"
+rm "${basename}.ps"
